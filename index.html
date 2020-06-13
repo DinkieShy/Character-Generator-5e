@@ -12,17 +12,39 @@
 	</head>	
 	<body>
 		<div id="display">
-			<button class="button" id="generateCharacter">Generate Character!</button>	
 			<h2 id="raceDisp" class="disp">Test1</h2>
 			<h2 id="classDisp" class="disp">Test2</h2>
 			<div id="stats">
-				<div class="statDisp" id="STR">10</div>
-				<div class="statDisp" id="DEX">10</div>
-				<div class="statDisp" id="CON">10</div>
-				<div class="statDisp" id="INT">10</div>
-				<div class="statDisp" id="WIS">10</div>
-				<div class="statDisp" id="CHA">10</div>
+				<div id="topStats">
+					<div class="statDisp">
+						<h4 id="STR">10</h4>
+						<h3>DEX</h3>
+					</div>
+					<div class="statDisp">
+						<h4 id="DEX">10</h4>
+						<h3>STR</h3>
+					</div>
+					<div class="statDisp">
+						<h4 id="CON">10</h4>
+						<h3>CON</h3>
+					</div>
+				</div>
+				<div id="botStats">
+					<div class="statDisp">
+						<h4 id="INT">10</h4>
+						<h3>INT</h3>
+					</div>
+					<div class="statDisp">
+						<h4 id="WIS">10</h4>
+						<h3>WIS</h3>
+					</div>
+					<div class="statDisp">
+						<h4 id="CHA">10</h4>
+						<h3>CHA</h3>
+					</div>
+				</div>
 			</div>
 		</div>
+		<button class="button" id="generateCharacter">Generate Character!</button>		
 	</body>
 </html>
