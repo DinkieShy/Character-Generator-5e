@@ -30,14 +30,17 @@ function generateStat(){
 
 stats = ["DEX", "STR", "CON", "INT", "WIS", "CHA"]
 
+function updateDisplay(){
+	$('#raceDisp')[0].innerHTML = getRace();
+	$('#classDisp')[0].innerHTML = getClass();
+
+	for(var i = 0; i < stats.length; i++){
+		$("#" + stats[i])[0].innerHTML = generateStat();
+	}
+}
+
 $(function(){
 	console.log("init");
-	$('#generateCharacter').click(function(){
-		$('#raceDisp')[0].innerHTML = getRace();
-		$('#classDisp')[0].innerHTML = getClass();
-
-		for(var i = 0; i < stats.length; i++){
-			$("#" + stats[i])[0].innerHTML = generateStat();
-		}
-	});
+	$('#generateCharacter').click(updateDisplay);
+	updateDisplay();
 });
