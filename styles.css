@@ -1,0 +1,126 @@
+html{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #505060;
+	margin: 0;
+	padding: 2.5vw;
+	overflow: hidden;
+}
+
+#foreground{
+	background-color: #e7e7f7;
+	width: 95vw;
+	box-sizing: border-box;
+	border-style: double;
+	border-color: black;
+	border-radius: 10px;
+	border-width: 10px;
+	min-height: 40px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+	height: 75vh;
+	overflow-y: scroll;
+}
+
+button{
+	margin: 2.5%;
+	width: 40%;
+	height: 7.5vh;
+	border-style: none;
+	background-color: #f7f7ff;
+	border-radius: 25px;
+	box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+button:active{
+	box-shadow: inset 10px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+.windowButton{
+	box-shadow: none;
+	height: 90%;
+	width: 40%;
+	color: white;
+	margin: 0;
+	box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+.windowButton:active{
+	box-shadow: none;
+	box-shadow: inset 10px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+.hidden{
+	display: none !important;
+}
+
+#greyOut{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	background-color: #121222;
+	opacity: 0.5;
+}
+
+#display{
+	background-color: #e7e7f7;
+	width: 95vw;
+	box-sizing: border-box;
+	border-style: double;
+	border-color: black;
+	border-radius: 10px;
+	border-width: 10px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+	min-height: 300px;
+	transform: translate(0, -50%);
+	position: absolute;
+	top: 50%;
+	text-align: center;
+}
+
+#generateCharacter{
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.disp{
+	font-family: monospace;
+	display: inline-flex;
+	font-size: 3em;
+	margin: 0.5em;
+	margin-top: 20px;
+}
+
+.statDisp{
+  display: inline-flex;
+  font-size: 2em;
+  margin: 0.75em;
+  font-family: monospace;
+}
+
+@media only screen and (min-width: 600px){
+	body{
+		background-color: #505060;
+		margin: 2.5vw;
+		margin-bottom: 0;
+		margin-top: 2.5vh;
+		padding: 0;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	button{
+		height: 7.5vh;
+		width: 20%;
+	}	
+}
