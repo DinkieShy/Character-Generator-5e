@@ -35,7 +35,12 @@ RACES = 				[ "Aarakocra",
 									"Vedalken",
 									"Verdan",
 									"Warforged",
-									"Yuan-ti"
+									"Yuan-ti",
+									"Owlin",
+									"Fairy",
+									"Harengon",
+									"Satyr",
+									"Grung"
 								]
 
 STAT_CHANGES = 	[
@@ -76,7 +81,12 @@ STAT_CHANGES = 	[
 								 [0, 0, 0, 2, 1, 0],
 								 [0, 0, 1, 0, 0, 2],
 								 [1, 0, 1, 0, 0, 0],
-								 [0, 0, 0, 1, 0, 2]
+								 [0, 0, 0, 1, 0, 2],
+								 [0, 0, 0, 0, 0, 0],
+								 [0, 0, 0, 0, 0, 0],
+								 [0, 0, 0, 0, 0, 0],
+								 [1, 0, 0, 0, 0, 2],
+								 [0, 2, 1, 0, 0, 0]
 								]
 
 CLASSES = ["Barbarian","Bard","Cleric","Druid","Fighter","Monk","Paladin","Ranger","Rogue","Sorcerer","Warlock",
